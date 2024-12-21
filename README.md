@@ -36,7 +36,6 @@ The application will be available at `http://localhost:5173`
 - React
 - TypeScript
 - Vite
-- Shadcn UI
 - React Router
 
 ## Features
