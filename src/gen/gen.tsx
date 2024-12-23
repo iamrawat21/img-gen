@@ -124,8 +124,7 @@ function Gen() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-6">{title}</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="space-y-6">
           <div className="space-y-2">
             <Label htmlFor="prompt">Prompt</Label>
@@ -133,7 +132,7 @@ function Gen() {
               id="prompt"
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
-              className="min-h-[100px]"
+              className="h-[500px]"
               placeholder="Describe the image you want to generate..."
             />
           </div>
@@ -167,7 +166,7 @@ function Gen() {
         </div>
 
         <Card className="p-6">
-          <div className="bg-muted rounded-lg flex items-center justify-center overflow-hidden h-[600px] relative">
+          <div className="bg-muted rounded-lg flex items-center justify-center overflow-hidden h-[400px] lg:h-[600px] relative">
             <div 
               className="flex items-center justify-center"
               style={{
@@ -208,4 +207,5 @@ function Gen() {
 }
 
 export default Gen
+
 
